@@ -18,15 +18,15 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-		printf("is positive\n");
+		puts("is positive\n");
 	}
 	else if (n == 0)
 	{
-		printf("is zero\n");
+		puts("is zero\n");
 	}
 	else
 	{
-		printf("is negative\n");
+		puts("is negative\n");
 	}
 	return (0);
 }
