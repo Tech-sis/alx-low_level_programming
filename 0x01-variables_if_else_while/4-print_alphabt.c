@@ -6,14 +6,16 @@
  */
 int main(void)
 {
-	char alp;
+	char alp = 'a';
 
-	for (alp = 'a'; alp <= 'z'; alp++)
+	while (alp <= 'z')
 	{
-		if (alp != 'q' && 'e')
+		if (alp != 'e' && alp != 'q')
+		{
 			putchar(alp);
+		}
+		alp++;
 	}
-		return (1);
 	putchar('\n');
 	return (0);
 }
