@@ -2,12 +2,14 @@
 /**
  * main - print a sequence of numbers
  *
- * Return: Always (0);
+ * Return: Always 0 (success);
  */
 int main(void)
 {
-	int i = 48;
-	int j = 48;
+	int i, j;
+
+	i = 48;
+	j = 48;
 
 	while (i < 58)
 	{
