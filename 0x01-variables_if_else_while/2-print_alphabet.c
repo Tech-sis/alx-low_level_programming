@@ -1,17 +1,17 @@
 #include<stdio.h>
 /**
- * main - Entry point
+ * main - print alphabets
  *
  * Return: Always 0 (success)
  */
 int main(void)
 {
-	char alp[52] = 'abcdefghijklmnopqrstuvwxyz';
-	int i;
+	char a;
 
-	while (alp == i)
+	for (a = 'a'; a <= 'z'; a++)
 	{
-		putchar(alp[i]);
+		putchar(a);
 	}
+	putchar('\n');
 	return (0);
 }
