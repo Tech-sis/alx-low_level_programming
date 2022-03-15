@@ -1,13 +1,20 @@
-#include<stdio.h> "main.h"
+#include<stdio.h>
 /**
  * main - prints _putchar
  *
  * Return: Always 0 (success)
  */
 
-int _putchar(char a[])
+int _putchar()
 {
-	char a[9]="_putchar";
-	_putchar("%c\n", a[9]);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
