@@ -5,9 +5,9 @@
  * Return: Always 0 (success)
  */
 
-int main(void)
+int putchar(char a)
 {
 	char a[9]="_putchar"
-	putchar("%c\n", a);
+	_putchar("%c\n", a);
 	return (0);
 }
