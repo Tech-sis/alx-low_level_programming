@@ -12,5 +12,4 @@ void jack_bauer(void)
 	{
 		_putchar(i);
 	}
-	return (0);
 }
