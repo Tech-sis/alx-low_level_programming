@@ -1,8 +1,6 @@
 #include "main.h"
 /**
  * more_numbers - print numbers 10 times
- * @c: check for number
- * @i: check for number
  * Return: 0
  */
 
