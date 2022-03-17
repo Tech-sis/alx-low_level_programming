@@ -10,11 +10,12 @@ void print_most_numbers(void)
 
 	while (c < 10)
 	{
-		if (c == 2 || c == 4)
+		if (c != 2 || c != 4)
 		{
-			break;
+			_putchar('0' + c);
 		}
-		_putchar('0' + c);
+
 		c++;
 	}
+	_putchar('\n');
 }
