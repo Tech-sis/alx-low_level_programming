@@ -28,7 +28,7 @@ int main(void)
 		{
 			putchar(' ');
 		}
-		printf("\n");
-		return (0);
 	}
+	printf("\n");
+	return (0);
 }
