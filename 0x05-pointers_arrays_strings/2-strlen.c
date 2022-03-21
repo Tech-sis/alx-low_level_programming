@@ -7,6 +7,9 @@
 
 int _strlen(char *s)
 {
-	_putchar("\*s");
-	return (0);
+	int i;
+
+	for (i = 0; i < s[i]; i++)
+
+	return (i);
 }
