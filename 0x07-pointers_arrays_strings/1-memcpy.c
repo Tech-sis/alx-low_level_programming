@@ -3,6 +3,7 @@
  * *_memcpy - copy memory byte
  * @dest: pointer to desctination
  * @src: pointer to source
+ * @n: maximum memory
  * Return: copy of memory byte
  */
 
