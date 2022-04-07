@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * string_nconcat - concatenates two strings
+ * string_noncat - concatenates two strings
  * @s1: string 1
  * @s2: string 2
  * @n: number of bytes to copy from string 2
