@@ -32,3 +32,4 @@ char *string_noncat(char *s1, char *s2, unsigned int n)
         s3[k] = s2[k - i];
     s3[k] = '\0';
     return (s3);
+}
