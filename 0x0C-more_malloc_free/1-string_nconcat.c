@@ -1,36 +1,52 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * string_noncat - concatenates two strings
+ * _strlen - find length of a string
+ * @s: string
+ * Return: int
+ */
+
+unsigned int _strlen(char *s)
+{
+    unsigned int size = 0;
+    for (; s[size] != '\0'; size++)
+        ;
+    return (size);
+}
+
+/**
+ * *string_nconcat - concatenates two strings
  * @s1: string 1
  * @s2: string 2
- * @n: number of bytes to copy from string 2
- * Return: pointer to concatenated string
+ * @n: first bytes of s2 to be used
+ * Return: pointer or NULL
  */
-char *string_noncat(char *s1, char *s2, unsigned int n)
+
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *s3;
-	unsigned int i = 0, j = 0, k;
+    unsigned int i, j;
+    char *m;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
+    if (s1 == NULL)
+        s1 = "";
+    if (s2 == NULL)
+        s2 = "";
 
-	while (s1[i] != '\0')
-		i++;
-	while (s2[j] != '\0')
-		j++;
+    if (n < _strlen(s2))
+        m = malloc(_strlen(s1) + n * sizeof(char) + 1);
+    else
+        m = malloc(_strlen(s1) + _strlen(s2) + 1);
 
-	if (n > j)
-		n = j;
-	s3 = malloc(i + n + 1) * sizeof(char);
-	if (s3 == NULL)
-		return (0);
+    if (m == 0)
+        return (NULL);
 
-	for (k = 0; k < i; k++)
-		s3[k] = s1[k];
-	for (; k < (i + n); k++)
-		s3[k] = s2[k - i];
-	s3[k] = '\0';
-	return (s3);
+    for (i = 0; s1[i] != '\0'; i++)
+        m[i] = s1[i];
+
+    for (j = 0; s2[j] != '\0' && j < n; i++, j++)
+        m[i] = s2[j];
+
+    m[i] = '\0';
+
+    return (m);
 }
