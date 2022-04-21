@@ -4,18 +4,22 @@
 
 /**
  * print_list - prints all element of a list
- * @list_t: contains element of list
  * @h: pointer to nodes
- * Return: list of elements
+ *
+ * Return: number of nodes
  */
 
 size_t print_list(const list_t *h)
 {
+	size_t nodes = 0;
+
 	while (h != NULL)
 	{
-		printf("%d\n", h->data);
+		if (h->str == NULL)
+			printf("[%d] %s\n", 0, "(nil)");
+		else
+			printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
+		nodes++;
 	}
-	if (h == NULL)
-		printf("[0] (nil)");
 }
