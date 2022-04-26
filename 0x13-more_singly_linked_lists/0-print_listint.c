@@ -4,20 +4,20 @@
 /**
  * print_listint - print all elements in a list
  *
- * @h: pointer to element
+ * @h: linked list
  * Return: size_t the size of h
  */
 
 size_t print_listint(const listint_t *h)
 {
-    int count = 1;
-    listint_t current = h;
+	size_t node = 0;
+	const listint_t *current = h;
 
-    while (current->next != NULL)
-    {
-        current = current->next;
-        count++;
-        printf("%s\n", current);
-    }
-    return (count);
+	while (current != NULL)
+	{
+		printf("%i\n", current->n);
+		current = current->next;
+		node++;
+	}
+	return (node);
 }
