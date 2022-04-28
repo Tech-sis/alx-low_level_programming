@@ -1,6 +1,8 @@
 #ifndef _MAIN_
 #define _MAIN_
 
+#define BYTE_LENGTH 8
+
 unsigned int binary_to_uint(const char *b);
 int _putchar(char c);
 void print_binary(unsigned long int n);
