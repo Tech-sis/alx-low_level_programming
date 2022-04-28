@@ -12,7 +12,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (index >= (sizeof(unsigned long int) * BYTE_LENGTH))
 		return (-1);
 
-	*n ^= (0 << index);
+	*n &= ~(1 << index);
 
 	return (1);
 }
