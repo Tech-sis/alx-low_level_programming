@@ -11,7 +11,7 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int shift = (sizeof(n) * BYTE_LENGHT);
+	int shift = (sizeof(n) * BYTE_LENGTH);
 	int i = 0;
 
 	while (shift--)
