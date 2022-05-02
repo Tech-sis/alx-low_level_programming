@@ -1,7 +1,7 @@
-#include <unistd.h>
+#include "main.h"
 
-/** 
- * read_textfile - read a file 
+/**
+ * read_textfile - read a file
  * @filename: name of file to read
  * @letters: length of input count
  * Return: return the length of letters count
