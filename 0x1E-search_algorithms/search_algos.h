@@ -7,7 +7,15 @@
 
 /* helpers */
 void print_array(int *array, size_t inc, size_t size);
-
+/**
+ * struct skiplist_s - Node of a skip list
+ * @n: Integer stored in the node
+ * @index: Index of the node in the list
+ * @next: Pointer to the next node in the level
+ * @express: Pointer to the next node in the express level
+ * Description: Node of a sorted singly linked list of integers
+ * for Holberton project
+ */
 typedef struct skiplist_s
 {
 	int n;
@@ -15,7 +23,14 @@ typedef struct skiplist_s
 	struct skiplist_s *next;
 	struct skiplist_s *express;
 } skiplist_t;
-
+/**
+ * struct listint_s - doubly linked list node
+ * @n: integer stored in the node
+ * @index: pointer to the previous element of the list
+ * @next: pointer to the next element of the list
+ * Description: doubly linked list node structure
+ * for Holberton project
+ */
 typedef struct listint_s
 {
 	int n;
